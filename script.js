@@ -179,6 +179,8 @@ window.addEventListener('scroll', () => {
 });
 
 // Typing effect for hero title (optional enhancement)
+// Disabled because it breaks HTML rendering in the title
+/*
 const heroTitle = document.querySelector('.hero-title');
 if (heroTitle) {
     const text = heroTitle.innerHTML;
@@ -196,6 +198,7 @@ if (heroTitle) {
     // Start typing effect after a short delay
     setTimeout(typeWriter, 500);
 }
+*/
 
 // Add parallax effect to hero section
 window.addEventListener('scroll', () => {
