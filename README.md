@@ -1,9 +1,9 @@
-# Emma Chen - Personal Portfolio Website
+# 周慧蓮 (Emma Chen) - Personal Portfolio Website
 
 A modern, responsive personal portfolio website showcasing UX/UI design and front-end development work.
 
 ## Overview
-This is a professional portfolio website for Emma Chen (fictional profile), a UX/UI Designer and Front-End Developer based in San Francisco, CA. The website features a clean, modern design with smooth animations and responsive layouts.
+This is a professional portfolio website for 周慧蓮 (Emma Chen) (fictional profile), a UX/UI Designer and Front-End Developer based in San Francisco, CA. The website features a clean, modern design with smooth animations and responsive layouts.
 
 ## Features
 - **Responsive Design**: Fully responsive layout that works on all devices
