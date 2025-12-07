@@ -124,6 +124,25 @@ const projectObserver = new IntersectionObserver((entries) => {
 
 projectCards.forEach(card => projectObserver.observe(card));
 
+// Animate achievement cards on scroll
+const achievementCards = document.querySelectorAll('.achievement-card');
+achievementCards.forEach((card, index) => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+});
+
+const achievementObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+achievementCards.forEach(card => achievementObserver.observe(card));
+
 // Form submission handler
 const contactForm = document.querySelector('.contact-form');
 contactForm.addEventListener('submit', (e) => {
@@ -188,5 +207,5 @@ window.addEventListener('scroll', () => {
 });
 
 // Console message
-console.log('%cWelcome to my portfolio! 👋', 'color: #667eea; font-size: 20px; font-weight: bold;');
-console.log('%cInterested in the code? Check out the repository!', 'color: #764ba2; font-size: 14px;');
+console.log('%c歡迎來到 Helen 的教育天地！ 👩‍🏫', 'color: #667eea; font-size: 20px; font-weight: bold;');
+console.log('%c期待與您交流教育理念與經驗！', 'color: #764ba2; font-size: 14px;');
