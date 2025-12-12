@@ -6,6 +6,14 @@
     <meta name="description" content="Helen - 教育專家、講師與創新教學推動者">
     <title>Helen - 教育專家與講師</title>
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Small CSS so hero content sits above the Vanta canvas -->
+    <style>
+      .hero { position: relative; overflow: hidden; }
+      /* Vanta injects a canvas; ensure it's full-size and behind content */
+      .hero canvas { position: absolute !important; top: 0; left: 0; width: 100% !important; height: 100% !important; z-index: 0 !important; }
+      .hero .hero-content { position: relative; z-index: 1; }
+    </style>
 </head>
 <body>
     <!-- Navigation -->
@@ -49,9 +57,9 @@
             <h2 class="section-title">關於 Helen</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>您好！我是 Helen，目前任職於 Cyber school，擁有超過 15 年的教育經驗。我專注於創新教學方法的研究與實踐，相信每個學生都有獨特的學習潛能等待被發掘。</p>
-                    <p>在 Cyber school 的教學生涯中，我不斷探索如何將科技融入教學，提升學生的學習動機與成效。我的教學理念是「以學生為中心」，重視培養學生的批判性思考、創造力及解決問題的能力。</p>
-                    <p>除了日常教學工作，我也積極參與教育研習、工作坊及演講活動，與全國各地的教育工作者分享教學經驗與創新理念。我相信透過教育工作者之間的交流與合作，能為台灣教育帶來更多正向的改變。</p>
+                    <p>您好！我是 Helen，目前任職於 Cyber school，擁有超過 15 年的教育經驗。我專注於創新教學方法的研究與實踐，相信每個學生都有獨特的�[...]
+                    <p>在 Cyber school 的教學生涯中，我不斷探索如何將科技融入教學，提升學生的學習動機與成效。我的教學理念是「以學生為中心」，重視�[...]
+                    <p>除了日常教學工作，我也積極參與教育研習、工作坊及演講活動，與全國各地的教育工作者分享教學經驗與創新理念。我相信透過教育[...]
                     <p>我的使命是透過教育啟發每一位學生，幫助他們找到自己的熱情所在，並培養終身學習的習慣。</p>
                 </div>
                 <div class="about-image">
@@ -109,7 +117,7 @@
                     </div>
                     <div class="project-content">
                         <h3>翻轉教室：讓學生成為學習的主人</h3>
-                        <p>深入探討翻轉教室的理念與實踐方法，分享如何透過課前預習、課中互動、課後延伸，提升學生學習動機與成效。包含實際教學案例分析與操作技巧。</p>
+                        <p>深入探討翻轉教室的理念與實踐方法，分享如何透過課前預習、課中互動、課後延伸，提升學生學習動機與成效。包含實際教學案��[...]
                         <div class="project-tags">
                             <span class="tag">創新教學</span>
                             <span class="tag">學習動機</span>
@@ -126,7 +134,7 @@
                     </div>
                     <div class="project-content">
                         <h3>雙語教學</h3>
-                        <p>探討雙語教學的理念與實務技巧，分享如何在課堂中有效整合中英文教學，提升學生語言能力與學科知識。包含教學設計策略、課堂活動範例及評量方法。</p>
+                        <p>探討雙語教學的理念與實務技巧，分享如何在課堂中有效整合中英文教學，提升學生語言能力與學科知識。包含教學設計策略、課��[...]
                         <div class="project-tags">
                             <span class="tag">雙語教學</span>
                             <span class="tag">語言學習</span>
@@ -160,7 +168,7 @@
                     </div>
                     <div class="project-content">
                         <h3>資訊素養與資訊識讀</h3>
-                        <p>探討數位時代必備的資訊素養能力，分享如何培養學生辨別資訊真偽、評估資訊來源可信度、以及負責任地使用資訊的能力。包含媒體識讀、網路安全與數位公民素養等主題。</p>
+                        <p>探討數位時代必備的資訊素養能力，分享如何培養學生辨別資訊真偽、評估資訊來源可信度、以及負責任地使用資訊的能力。包含��[...]
                         <div class="project-tags">
                             <span class="tag">資訊素養</span>
                             <span class="tag">媒體識讀</span>
@@ -177,7 +185,7 @@
                     </div>
                     <div class="project-content">
                         <h3>課堂互動工具與策略</h3>
-                        <p>介紹多元化的課堂互動技巧與數位工具應用，分享如何透過即時反饋系統、互動問答、小組討論等策略，提升學生參與度與學習成效。包含實用工具示範與教學設計要訣。</p>
+                        <p>介紹多元化的課堂互動技巧與數位工具應用，分享如何透過即時反饋系統、互動問答、小組討論等策略，提升學生參與度與學習成��[...]
                         <div class="project-tags">
                             <span class="tag">互動教學</span>
                             <span class="tag">課堂參與</span>
@@ -226,73 +234,5 @@
                 </div>
                 <div class="achievement-card">
                     <div class="achievement-icon">✍️</div>
-                    <h3>著作與分享</h3>
-                    <ul>
-                        <li>教學期刊論文發表</li>
-                        <li>教育專欄作家</li>
-                        <li>教學部落格經營</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">聯絡方式</h2>
-            <div class="contact-content">
-                <p class="contact-description">歡迎學校、教育機構、研習活動邀請演講或進行教學交流。我很樂意分享教學經驗，也期待向各位教育先進學習。若有任何合作機會或教學相關問題，請隨時與我聯繫！</p>
-                <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="您的姓名" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="電子郵件" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="服務單位">
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="想說的話或邀約訊息" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">送出訊息</button>
-                </form>
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <span class="contact-icon">📧</span>
-                        <span>helen@cyberschool.edu.tw</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">🏫</span>
-                        <span>Cyber school</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">📱</span>
-                        <span>LINE ID: helen_teacher</span>
-                    </div>
-                    <div class="contact-item">
-                        <span class="contact-icon">💼</span>
-                        <span>Facebook 粉絲專頁：Helen 的教育分享</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Helen. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#" aria-label="Facebook">Facebook</a>
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="教學部落格">部落格</a>
-                <a href="#" aria-label="Email">Email</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+                    <*
+
